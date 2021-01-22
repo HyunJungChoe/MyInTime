@@ -11,6 +11,14 @@ class Blog(models.Model):
     body = RichTextUploadingField()
 
 
+class Comment(models.Model):
+    blog = models.ForeignKey(Blog, on_delete=models.SET_NULL, null=True)
+    comment_date = models.DateTimeField(auto_now_add=True)
+    comment_user = models.TextField(max_length=20)
+    comment_thumbnail_url = models.TextField(max_length=300)
+    comment_textfield = models.TextField()
+
+
 # Create your models here.
 # class Blog(models.Model):
 #     title = models.CharField(max_length=100)
