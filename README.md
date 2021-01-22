@@ -16,12 +16,13 @@ cd pjt_MyInTime
 python manage.py runserver
 ```
 
-**requirements.txt** \
-asgiref==3.3.1  \
-Django==3.1.5 \ 
-django-ckeditor==6.0.0  \ 
-django-js-asset==1.2.2  \ 
-pytz==2020.5  \
-sqlparse==0.4.1  \
+**requirements.txt** 
+
+asgiref==3.3.1  
+Django==3.1.5 \
+django-ckeditor==6.0.0  
+django-js-asset==1.2.2  
+pytz==2020.5 
+sqlparse==0.4.1  
 
  
